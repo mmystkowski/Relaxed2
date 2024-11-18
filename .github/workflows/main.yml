@@ -49,6 +49,3 @@ jobs:
           python-version: 3.7
           architecture: x64
 
-      - name: Push binary to main branch
-        if: github.event_name == 'push'
-        run: python master/.ci/move_binary.py "${{ steps.buildozer.outputs.filename }}" master main bin
