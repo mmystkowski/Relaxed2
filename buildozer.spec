@@ -13,7 +13,7 @@ package.domain = org.stack
 source.dir = .
 
 # (list) Source files to include (let empty to include all the files)
-source.include_exts = py,png,jpg,kv,atlas,so,wav
+source.include_exts = py,png,jpg,kv,atlas
 
 # (list) List of inclusions using pattern matching
 #source.include_patterns = assets/*,images/*.png
@@ -37,7 +37,7 @@ version = 0.1
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
 # requirements = python3.8,kivy,requests,urllib3,chardet,idna,ffpyplayer
-requirements = python3,kivy,requests,urllib3,chardet,idna,ffpyplayer, pillow
+requirements = python3,kivy,pillow
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
 # requirements.source.kivy = ../../kivy
@@ -86,7 +86,7 @@ fullscreen = 0
 android.permissions = INTERNET
 
 # (int) Target Android API, should be as high as possible.
-android.api = 28
+android.api = 31
 
 # (int) Minimum API your APK will support.
 android.minapi = 21
@@ -99,6 +99,8 @@ android.minapi = 21
 
 # (int) Android NDK API to use. This is the minimum API your app will support, it should usually match android.minapi.
 #android.ndk_api = 28
+
+android.archs = arm64-v8a, armeabi-v7a
 
 # (bool) Use --private data storage (True) or --dir public storage (False)
 #android.private_storage = True
