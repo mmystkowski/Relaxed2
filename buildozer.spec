@@ -100,7 +100,7 @@ android.minapi = 21
 # (int) Android NDK API to use. This is the minimum API your app will support, it should usually match android.minapi.
 #android.ndk_api = 28
 
-android.archs = arm64-v8a, armeabi-v7a
+
 
 # (bool) Use --private data storage (True) or --dir public storage (False)
 #android.private_storage = True
@@ -220,7 +220,7 @@ android.add_libs_armeabi_v7a = libs/android-v7/*.so
 
 # (str) The Android arch to build for, choices: armeabi-v7a, arm64-v8a, x86, x86_64
 #android.arch = armeabi-v7a
-android.archs = armeabi-v7a
+android.archs = arm64-v8a, armeabi-v7a
 
 # (int) overrides automatic versionCode computation (used in build.gradle)
 # this is not the same as app version and should only be edited if you know what you're doing
